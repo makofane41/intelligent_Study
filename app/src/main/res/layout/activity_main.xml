@@ -154,18 +154,18 @@ tools:ignore="HardcodedText">
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/image_view1"
+                    android:id="@+id/findBooks"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
 
-                    app:layout_constraintBottom_toTopOf="@+id/textView1"
+                    app:layout_constraintBottom_toTopOf="@+id/findBooks1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/findBooks1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -178,7 +178,7 @@ tools:ignore="HardcodedText">
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view1" />
+                    app:layout_constraintTop_toBottomOf="@+id/findBooks" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -205,14 +205,14 @@ tools:ignore="HardcodedText">
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
 
-                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintBottom_toTopOf="@+id/textVPastPapers"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textVPastPapers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
