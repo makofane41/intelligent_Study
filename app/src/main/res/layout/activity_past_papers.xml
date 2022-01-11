@@ -6,8 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#e4e4e4"
-    tools:context=".pastPapersActivity">
-        tools:ignore="HardcodedText">
+        tools:context=".pastPapersActivity">
 
         <View
             android:id="@+id/view"
@@ -47,8 +46,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="381dp"
-            android:layout_height="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -65,11 +64,11 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="138dp"
-                    android:layout_height="37dp"
+                    android:layout_width="198dp"
+                    android:layout_height="36dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="24dp"
-                    android:text="Hello, Given"
+                    android:text="past exam papers"
                     android:textAllCaps="true"
                     android:textColor="@color/blue"
                     android:textSize="16sp"
@@ -77,45 +76,31 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/todoB"
-                    android:layout_width="46dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="272dp"
-                    android:layout_marginTop="-12dp"
-                    android:layout_marginEnd="5dp"
-                    android:outlineSpotShadowColor="@color/blue"
-                    app:icon="@drawable/ic_baseline_logout_24"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView2"
-                    app:layout_constraintVertical_bias="0.0" />
-
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="106dp"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="131dp"
-                    tools:layout_editor_absoluteY="6dp">
+                    tools:ignore="MissingConstraints">
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="227dp"
-                        android:layout_height="25dp"
-                        android:gravity="center_horizontal"
-                        android:text="Past Exam papers"
-                        android:textAllCaps="true"
-                        android:textColor="@color/blue"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/custom_rectangle"
+                        android:iconifiedByDefault="false"
+                        android:outlineSpotShadowColor="@color/blue"
+                        android:queryBackground="@android:color/transparent"
+                        app:circularflow_radiusInDP="40dp"
+                        android:queryHint="Search content"
+
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintHorizontal_bias="0.156"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.985" />
+                        app:layout_constraintVertical_bias="0.0" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -135,22 +120,5 @@
             app:menu="@menu/bottom_navigation_menu"
             tools:ignore="MissingConstraints,UnknownId" />
 
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/custom_rectangle"
-            android:iconifiedByDefault="false"
-            android:outlineSpotShadowColor="@color/blue"
-            android:queryBackground="@android:color/transparent"
-            android:queryHint="Search past exam papers"
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-            app:circularflow_radiusInDP="40dp"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:layout_constraintVertical_bias="0.0" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>

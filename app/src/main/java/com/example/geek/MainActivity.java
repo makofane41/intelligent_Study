@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView findBooks;  //optional
     TextView findbooks1; //recommend
     TextView textVPastPapers; //recommend
+    TextView other;
+    TextView yourContent;
+    TextView q_a;
 
 
     @Override
@@ -26,6 +29,38 @@ public class MainActivity extends AppCompatActivity {
 
         //find papers
         TextView textVPastpapers = findViewById(R.id.textVPastPapers);
+
+        TextView other = findViewById(R.id.textViewOther);
+        TextView yourContent = findViewById(R.id.textViewContent);
+        TextView q_a = findViewById(R.id.textViewQ_A);
+
+        //q_a Intent
+        q_a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent q_aIntent = new Intent(getBaseContext(),q_a_Activity.class);
+                startActivity(q_aIntent);
+            }
+        });
+
+        //content intent
+        yourContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent contentIntent = new Intent(getBaseContext(),uploadActivity.class);
+                startActivity(contentIntent);
+            }
+        });
+
+        //other intent
+        other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent otherIntent = new Intent(getBaseContext(),otherActivity.class);
+                startActivity(otherIntent);
+            }
+        });
+
 
 
         //find books intents

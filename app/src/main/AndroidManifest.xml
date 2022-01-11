@@ -37,9 +37,6 @@
             android:name=".feeedActivity"
             android:exported="false" />
         <activity
-            android:name=".solutionActivity"
-            android:exported="false" />
-        <activity
             android:name=".findBooksActivity"
             android:exported="false" />
         <activity
