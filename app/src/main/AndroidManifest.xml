@@ -10,6 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Geek">
         <activity
+            android:name=".registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".otherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".supportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".q_a_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".accountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".solutionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".findBooksActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
